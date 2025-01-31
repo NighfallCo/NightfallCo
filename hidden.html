@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Secreta</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            line-height: 1.6;
+            font-size: 1.2em;
+        }
+        .glitch {
+            display: inline-block;
+            font-size: 1.5em;
+            color: #ff0000;
+            position: relative;
+            animation: glitch 0.8s infinite alternate;
+        }
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(2px, -2px); }
+            60% { transform: translate(-2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Não aguento mais, este lugar é estranho, tem um cheiro estranho, eles não me deixam entrar em certas salas. Superiores saem e entram em salas restritas da Nightfall Company. Eu escutei algo sobre---- <span class="glitch">glitch</span></p>
+    </div>
+</body>
+</html>
